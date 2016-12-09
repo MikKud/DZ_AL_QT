@@ -16,7 +16,7 @@ public:
     ~CalcHistory();
 
 public slots:
-    void AddNewEntry(QString&);
+    void AddNewEntry(char*,QString&);
 
 private:
     Ui::CalcHistory *ui;

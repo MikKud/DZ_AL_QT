@@ -8,6 +8,6 @@
 #include <stdio.h>
 using namespace std;
 
-extern vector<vector<pair<mpz_class,mpz_class>>> tasks;
+extern vector<pair<mpz_class,mpz_class>> tasks;
 
 void Factor(mpz_class);

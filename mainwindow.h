@@ -34,7 +34,7 @@ private slots:
     void on_pushButton_2_clicked();
 
 signals:
-    void GetNewResult(QString&);
+    void GetNewResult(char*,QString&);
 
 private:
     Server s;

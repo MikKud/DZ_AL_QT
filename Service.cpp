@@ -15,8 +15,8 @@ void Service::InitHandling() {
 	mtx.lock();
 	for (int i =0; i< control.size(); ++i){
 		if (control[i] == 0){
-			string row(mpz_get_str(NULL,10,tasks[0][i].second.get_mpz_t()));
-			string ch(mpz_get_str(NULL,10,tasks[0][i].first.get_mpz_t()));
+            string row(mpz_get_str(NULL,10,tasks[i].second.get_mpz_t()));
+            string ch(mpz_get_str(NULL,10,tasks[i].first.get_mpz_t()));
             str = ch +"^"+ row+ "\n";
 			control[i] = 2; //в процессе выполнения
 			NumOfTask = i;
